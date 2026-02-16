@@ -8,7 +8,7 @@ terraform {
 
   backend "s3" {
     bucket = "terraform-remote-state-naveen"
-    key = "remote-state-key"
+    key = "remote-state-count"
     region = "us-east-1"
     use_lockfile = true
     encrypt = true
