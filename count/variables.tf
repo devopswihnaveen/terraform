@@ -41,3 +41,18 @@ variable "protocol" {
     type = string
     default = "-1"
 }
+
+variable "ec2_tags" {
+    type = map
+    default = {
+        Name = "terraform"
+        Terraform = "true"
+        Project = "NaveenPersonal"
+        Environment = "dev"
+    }
+}
+
+variable "instance_type" {
+    type = string
+    default = "t3.micro"
+}
