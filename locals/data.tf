@@ -1,5 +1,5 @@
 data "aws_ami" "naveencloud" {
-    owners           = ["973714476881"]
+    owners           = ["586117210708"]
     most_recent      = true
     
     filter {
