@@ -10,3 +10,8 @@ variable "zone_id" {
 variable "domain_name" {
     default = "amaravathi.today"
 }
+
+variable "fruits" {
+    type = list(string)
+    default = ["apple", "banana", "orange", "apple"]
+}
