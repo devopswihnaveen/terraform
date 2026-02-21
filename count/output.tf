@@ -1,6 +1,4 @@
 output "roboshop_instances" {
-    value = ""
-    sensitive = true
+    value = aws_instances.example
     description = "description"
-    depends_on = []
 }
