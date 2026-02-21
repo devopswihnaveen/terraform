@@ -1,0 +1,2988 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.14.5",
+    "variables": {
+        "instances": {
+            "value": [
+                "mongodb",
+                "redis",
+                "mysql",
+                "rabbitmq",
+                "catalogue",
+                "user",
+                "cart",
+                "shipping",
+                "payment",
+                "frontend"
+            ]
+        }
+    },
+    "planned_values": {
+        "outputs": {
+            "roboshop_instances": {
+                "sensitive": false
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "aws_instance.example[0]",
+                    "mode": "managed",
+                    "type": "aws_instance",
+                    "name": "example",
+                    "index": 0,
+                    "provider_name": "registry.terraform.io/hashicorp/aws",
+                    "schema_version": 2,
+                    "values": {
+                        "ami": "ami-0220d79f3f480ecf5",
+                        "credit_specification": [],
+                        "force_destroy": false,
+                        "get_password_data": false,
+                        "hibernation": null,
+                        "instance_type": "t3.micro",
+                        "launch_template": [],
+                        "region": "us-east-1",
+                        "source_dest_check": true,
+                        "tags": {
+                            "Name": "mongodb",
+                            "Project": "roboshop"
+                        },
+                        "tags_all": {
+                            "Name": "mongodb",
+                            "Project": "roboshop"
+                        },
+                        "timeouts": null,
+                        "user_data": null,
+                        "user_data_replace_on_change": false,
+                        "volume_tags": null
+                    },
+                    "sensitive_values": {
+                        "capacity_reservation_specification": [],
+                        "cpu_options": [],
+                        "credit_specification": [],
+                        "ebs_block_device": [],
+                        "enclave_options": [],
+                        "ephemeral_block_device": [],
+                        "instance_market_options": [],
+                        "ipv6_addresses": [],
+                        "launch_template": [],
+                        "maintenance_options": [],
+                        "metadata_options": [],
+                        "network_interface": [],
+                        "primary_network_interface": [],
+                        "private_dns_name_options": [],
+                        "root_block_device": [],
+                        "secondary_network_interface": [],
+                        "secondary_private_ips": [],
+                        "security_groups": [],
+                        "tags": {},
+                        "tags_all": {},
+                        "vpc_security_group_ids": []
+                    },
+                    "identity_schema_version": 0,
+                    "identity": {
+                        "account_id": null,
+                        "id": null,
+                        "region": null
+                    }
+                },
+                {
+                    "address": "aws_instance.example[1]",
+                    "mode": "managed",
+                    "type": "aws_instance",
+                    "name": "example",
+                    "index": 1,
+                    "provider_name": "registry.terraform.io/hashicorp/aws",
+                    "schema_version": 2,
+                    "values": {
+                        "ami": "ami-0220d79f3f480ecf5",
+                        "credit_specification": [],
+                        "force_destroy": false,
+                        "get_password_data": false,
+                        "hibernation": null,
+                        "instance_type": "t3.micro",
+                        "launch_template": [],
+                        "region": "us-east-1",
+                        "source_dest_check": true,
+                        "tags": {
+                            "Name": "redis",
+                            "Project": "roboshop"
+                        },
+                        "tags_all": {
+                            "Name": "redis",
+                            "Project": "roboshop"
+                        },
+                        "timeouts": null,
+                        "user_data": null,
+                        "user_data_replace_on_change": false,
+                        "volume_tags": null
+                    },
+                    "sensitive_values": {
+                        "capacity_reservation_specification": [],
+                        "cpu_options": [],
+                        "credit_specification": [],
+                        "ebs_block_device": [],
+                        "enclave_options": [],
+                        "ephemeral_block_device": [],
+                        "instance_market_options": [],
+                        "ipv6_addresses": [],
+                        "launch_template": [],
+                        "maintenance_options": [],
+                        "metadata_options": [],
+                        "network_interface": [],
+                        "primary_network_interface": [],
+                        "private_dns_name_options": [],
+                        "root_block_device": [],
+                        "secondary_network_interface": [],
+                        "secondary_private_ips": [],
+                        "security_groups": [],
+                        "tags": {},
+                        "tags_all": {},
+                        "vpc_security_group_ids": []
+                    },
+                    "identity_schema_version": 0,
+                    "identity": {
+                        "account_id": null,
+                        "id": null,
+                        "region": null
+                    }
+                },
+                {
+                    "address": "aws_instance.example[2]",
+                    "mode": "managed",
+                    "type": "aws_instance",
+                    "name": "example",
+                    "index": 2,
+                    "provider_name": "registry.terraform.io/hashicorp/aws",
+                    "schema_version": 2,
+                    "values": {
+                        "ami": "ami-0220d79f3f480ecf5",
+                        "credit_specification": [],
+                        "force_destroy": false,
+                        "get_password_data": false,
+                        "hibernation": null,
+                        "instance_type": "t3.micro",
+                        "launch_template": [],
+                        "region": "us-east-1",
+                        "source_dest_check": true,
+                        "tags": {
+                            "Name": "mysql",
+                            "Project": "roboshop"
+                        },
+                        "tags_all": {
+                            "Name": "mysql",
+                            "Project": "roboshop"
+                        },
+                        "timeouts": null,
+                        "user_data": null,
+                        "user_data_replace_on_change": false,
+                        "volume_tags": null
+                    },
+                    "sensitive_values": {
+                        "capacity_reservation_specification": [],
+                        "cpu_options": [],
+                        "credit_specification": [],
+                        "ebs_block_device": [],
+                        "enclave_options": [],
+                        "ephemeral_block_device": [],
+                        "instance_market_options": [],
+                        "ipv6_addresses": [],
+                        "launch_template": [],
+                        "maintenance_options": [],
+                        "metadata_options": [],
+                        "network_interface": [],
+                        "primary_network_interface": [],
+                        "private_dns_name_options": [],
+                        "root_block_device": [],
+                        "secondary_network_interface": [],
+                        "secondary_private_ips": [],
+                        "security_groups": [],
+                        "tags": {},
+                        "tags_all": {},
+                        "vpc_security_group_ids": []
+                    },
+                    "identity_schema_version": 0,
+                    "identity": {
+                        "account_id": null,
+                        "id": null,
+                        "region": null
+                    }
+                },
+                {
+                    "address": "aws_instance.example[3]",
+                    "mode": "managed",
+                    "type": "aws_instance",
+                    "name": "example",
+                    "index": 3,
+                    "provider_name": "registry.terraform.io/hashicorp/aws",
+                    "schema_version": 2,
+                    "values": {
+                        "ami": "ami-0220d79f3f480ecf5",
+                        "credit_specification": [],
+                        "force_destroy": false,
+                        "get_password_data": false,
+                        "hibernation": null,
+                        "instance_type": "t3.micro",
+                        "launch_template": [],
+                        "region": "us-east-1",
+                        "source_dest_check": true,
+                        "tags": {
+                            "Name": "rabbitmq",
+                            "Project": "roboshop"
+                        },
+                        "tags_all": {
+                            "Name": "rabbitmq",
+                            "Project": "roboshop"
+                        },
+                        "timeouts": null,
+                        "user_data": null,
+                        "user_data_replace_on_change": false,
+                        "volume_tags": null
+                    },
+                    "sensitive_values": {
+                        "capacity_reservation_specification": [],
+                        "cpu_options": [],
+                        "credit_specification": [],
+                        "ebs_block_device": [],
+                        "enclave_options": [],
+                        "ephemeral_block_device": [],
+                        "instance_market_options": [],
+                        "ipv6_addresses": [],
+                        "launch_template": [],
+                        "maintenance_options": [],
+                        "metadata_options": [],
+                        "network_interface": [],
+                        "primary_network_interface": [],
+                        "private_dns_name_options": [],
+                        "root_block_device": [],
+                        "secondary_network_interface": [],
+                        "secondary_private_ips": [],
+                        "security_groups": [],
+                        "tags": {},
+                        "tags_all": {},
+                        "vpc_security_group_ids": []
+                    },
+                    "identity_schema_version": 0,
+                    "identity": {
+                        "account_id": null,
+                        "id": null,
+                        "region": null
+                    }
+                },
+                {
+                    "address": "aws_instance.example[4]",
+                    "mode": "managed",
+                    "type": "aws_instance",
+                    "name": "example",
+                    "index": 4,
+                    "provider_name": "registry.terraform.io/hashicorp/aws",
+                    "schema_version": 2,
+                    "values": {
+                        "ami": "ami-0220d79f3f480ecf5",
+                        "credit_specification": [],
+                        "force_destroy": false,
+                        "get_password_data": false,
+                        "hibernation": null,
+                        "instance_type": "t3.micro",
+                        "launch_template": [],
+                        "region": "us-east-1",
+                        "source_dest_check": true,
+                        "tags": {
+                            "Name": "catalogue",
+                            "Project": "roboshop"
+                        },
+                        "tags_all": {
+                            "Name": "catalogue",
+                            "Project": "roboshop"
+                        },
+                        "timeouts": null,
+                        "user_data": null,
+                        "user_data_replace_on_change": false,
+                        "volume_tags": null
+                    },
+                    "sensitive_values": {
+                        "capacity_reservation_specification": [],
+                        "cpu_options": [],
+                        "credit_specification": [],
+                        "ebs_block_device": [],
+                        "enclave_options": [],
+                        "ephemeral_block_device": [],
+                        "instance_market_options": [],
+                        "ipv6_addresses": [],
+                        "launch_template": [],
+                        "maintenance_options": [],
+                        "metadata_options": [],
+                        "network_interface": [],
+                        "primary_network_interface": [],
+                        "private_dns_name_options": [],
+                        "root_block_device": [],
+                        "secondary_network_interface": [],
+                        "secondary_private_ips": [],
+                        "security_groups": [],
+                        "tags": {},
+                        "tags_all": {},
+                        "vpc_security_group_ids": []
+                    },
+                    "identity_schema_version": 0,
+                    "identity": {
+                        "account_id": null,
+                        "id": null,
+                        "region": null
+                    }
+                },
+                {
+                    "address": "aws_instance.example[5]",
+                    "mode": "managed",
+                    "type": "aws_instance",
+                    "name": "example",
+                    "index": 5,
+                    "provider_name": "registry.terraform.io/hashicorp/aws",
+                    "schema_version": 2,
+                    "values": {
+                        "ami": "ami-0220d79f3f480ecf5",
+                        "credit_specification": [],
+                        "force_destroy": false,
+                        "get_password_data": false,
+                        "hibernation": null,
+                        "instance_type": "t3.micro",
+                        "launch_template": [],
+                        "region": "us-east-1",
+                        "source_dest_check": true,
+                        "tags": {
+                            "Name": "user",
+                            "Project": "roboshop"
+                        },
+                        "tags_all": {
+                            "Name": "user",
+                            "Project": "roboshop"
+                        },
+                        "timeouts": null,
+                        "user_data": null,
+                        "user_data_replace_on_change": false,
+                        "volume_tags": null
+                    },
+                    "sensitive_values": {
+                        "capacity_reservation_specification": [],
+                        "cpu_options": [],
+                        "credit_specification": [],
+                        "ebs_block_device": [],
+                        "enclave_options": [],
+                        "ephemeral_block_device": [],
+                        "instance_market_options": [],
+                        "ipv6_addresses": [],
+                        "launch_template": [],
+                        "maintenance_options": [],
+                        "metadata_options": [],
+                        "network_interface": [],
+                        "primary_network_interface": [],
+                        "private_dns_name_options": [],
+                        "root_block_device": [],
+                        "secondary_network_interface": [],
+                        "secondary_private_ips": [],
+                        "security_groups": [],
+                        "tags": {},
+                        "tags_all": {},
+                        "vpc_security_group_ids": []
+                    },
+                    "identity_schema_version": 0,
+                    "identity": {
+                        "account_id": null,
+                        "id": null,
+                        "region": null
+                    }
+                },
+                {
+                    "address": "aws_instance.example[6]",
+                    "mode": "managed",
+                    "type": "aws_instance",
+                    "name": "example",
+                    "index": 6,
+                    "provider_name": "registry.terraform.io/hashicorp/aws",
+                    "schema_version": 2,
+                    "values": {
+                        "ami": "ami-0220d79f3f480ecf5",
+                        "credit_specification": [],
+                        "force_destroy": false,
+                        "get_password_data": false,
+                        "hibernation": null,
+                        "instance_type": "t3.micro",
+                        "launch_template": [],
+                        "region": "us-east-1",
+                        "source_dest_check": true,
+                        "tags": {
+                            "Name": "cart",
+                            "Project": "roboshop"
+                        },
+                        "tags_all": {
+                            "Name": "cart",
+                            "Project": "roboshop"
+                        },
+                        "timeouts": null,
+                        "user_data": null,
+                        "user_data_replace_on_change": false,
+                        "volume_tags": null
+                    },
+                    "sensitive_values": {
+                        "capacity_reservation_specification": [],
+                        "cpu_options": [],
+                        "credit_specification": [],
+                        "ebs_block_device": [],
+                        "enclave_options": [],
+                        "ephemeral_block_device": [],
+                        "instance_market_options": [],
+                        "ipv6_addresses": [],
+                        "launch_template": [],
+                        "maintenance_options": [],
+                        "metadata_options": [],
+                        "network_interface": [],
+                        "primary_network_interface": [],
+                        "private_dns_name_options": [],
+                        "root_block_device": [],
+                        "secondary_network_interface": [],
+                        "secondary_private_ips": [],
+                        "security_groups": [],
+                        "tags": {},
+                        "tags_all": {},
+                        "vpc_security_group_ids": []
+                    },
+                    "identity_schema_version": 0,
+                    "identity": {
+                        "account_id": null,
+                        "id": null,
+                        "region": null
+                    }
+                },
+                {
+                    "address": "aws_instance.example[7]",
+                    "mode": "managed",
+                    "type": "aws_instance",
+                    "name": "example",
+                    "index": 7,
+                    "provider_name": "registry.terraform.io/hashicorp/aws",
+                    "schema_version": 2,
+                    "values": {
+                        "ami": "ami-0220d79f3f480ecf5",
+                        "credit_specification": [],
+                        "force_destroy": false,
+                        "get_password_data": false,
+                        "hibernation": null,
+                        "instance_type": "t3.micro",
+                        "launch_template": [],
+                        "region": "us-east-1",
+                        "source_dest_check": true,
+                        "tags": {
+                            "Name": "shipping",
+                            "Project": "roboshop"
+                        },
+                        "tags_all": {
+                            "Name": "shipping",
+                            "Project": "roboshop"
+                        },
+                        "timeouts": null,
+                        "user_data": null,
+                        "user_data_replace_on_change": false,
+                        "volume_tags": null
+                    },
+                    "sensitive_values": {
+                        "capacity_reservation_specification": [],
+                        "cpu_options": [],
+                        "credit_specification": [],
+                        "ebs_block_device": [],
+                        "enclave_options": [],
+                        "ephemeral_block_device": [],
+                        "instance_market_options": [],
+                        "ipv6_addresses": [],
+                        "launch_template": [],
+                        "maintenance_options": [],
+                        "metadata_options": [],
+                        "network_interface": [],
+                        "primary_network_interface": [],
+                        "private_dns_name_options": [],
+                        "root_block_device": [],
+                        "secondary_network_interface": [],
+                        "secondary_private_ips": [],
+                        "security_groups": [],
+                        "tags": {},
+                        "tags_all": {},
+                        "vpc_security_group_ids": []
+                    },
+                    "identity_schema_version": 0,
+                    "identity": {
+                        "account_id": null,
+                        "id": null,
+                        "region": null
+                    }
+                },
+                {
+                    "address": "aws_instance.example[8]",
+                    "mode": "managed",
+                    "type": "aws_instance",
+                    "name": "example",
+                    "index": 8,
+                    "provider_name": "registry.terraform.io/hashicorp/aws",
+                    "schema_version": 2,
+                    "values": {
+                        "ami": "ami-0220d79f3f480ecf5",
+                        "credit_specification": [],
+                        "force_destroy": false,
+                        "get_password_data": false,
+                        "hibernation": null,
+                        "instance_type": "t3.micro",
+                        "launch_template": [],
+                        "region": "us-east-1",
+                        "source_dest_check": true,
+                        "tags": {
+                            "Name": "payment",
+                            "Project": "roboshop"
+                        },
+                        "tags_all": {
+                            "Name": "payment",
+                            "Project": "roboshop"
+                        },
+                        "timeouts": null,
+                        "user_data": null,
+                        "user_data_replace_on_change": false,
+                        "volume_tags": null
+                    },
+                    "sensitive_values": {
+                        "capacity_reservation_specification": [],
+                        "cpu_options": [],
+                        "credit_specification": [],
+                        "ebs_block_device": [],
+                        "enclave_options": [],
+                        "ephemeral_block_device": [],
+                        "instance_market_options": [],
+                        "ipv6_addresses": [],
+                        "launch_template": [],
+                        "maintenance_options": [],
+                        "metadata_options": [],
+                        "network_interface": [],
+                        "primary_network_interface": [],
+                        "private_dns_name_options": [],
+                        "root_block_device": [],
+                        "secondary_network_interface": [],
+                        "secondary_private_ips": [],
+                        "security_groups": [],
+                        "tags": {},
+                        "tags_all": {},
+                        "vpc_security_group_ids": []
+                    },
+                    "identity_schema_version": 0,
+                    "identity": {
+                        "account_id": null,
+                        "id": null,
+                        "region": null
+                    }
+                },
+                {
+                    "address": "aws_instance.example[9]",
+                    "mode": "managed",
+                    "type": "aws_instance",
+                    "name": "example",
+                    "index": 9,
+                    "provider_name": "registry.terraform.io/hashicorp/aws",
+                    "schema_version": 2,
+                    "values": {
+                        "ami": "ami-0220d79f3f480ecf5",
+                        "credit_specification": [],
+                        "force_destroy": false,
+                        "get_password_data": false,
+                        "hibernation": null,
+                        "instance_type": "t3.micro",
+                        "launch_template": [],
+                        "region": "us-east-1",
+                        "source_dest_check": true,
+                        "tags": {
+                            "Name": "frontend",
+                            "Project": "roboshop"
+                        },
+                        "tags_all": {
+                            "Name": "frontend",
+                            "Project": "roboshop"
+                        },
+                        "timeouts": null,
+                        "user_data": null,
+                        "user_data_replace_on_change": false,
+                        "volume_tags": null
+                    },
+                    "sensitive_values": {
+                        "capacity_reservation_specification": [],
+                        "cpu_options": [],
+                        "credit_specification": [],
+                        "ebs_block_device": [],
+                        "enclave_options": [],
+                        "ephemeral_block_device": [],
+                        "instance_market_options": [],
+                        "ipv6_addresses": [],
+                        "launch_template": [],
+                        "maintenance_options": [],
+                        "metadata_options": [],
+                        "network_interface": [],
+                        "primary_network_interface": [],
+                        "private_dns_name_options": [],
+                        "root_block_device": [],
+                        "secondary_network_interface": [],
+                        "secondary_private_ips": [],
+                        "security_groups": [],
+                        "tags": {},
+                        "tags_all": {},
+                        "vpc_security_group_ids": []
+                    },
+                    "identity_schema_version": 0,
+                    "identity": {
+                        "account_id": null,
+                        "id": null,
+                        "region": null
+                    }
+                },
+                {
+                    "address": "aws_security_group.allow_tls",
+                    "mode": "managed",
+                    "type": "aws_security_group",
+                    "name": "allow_tls",
+                    "provider_name": "registry.terraform.io/hashicorp/aws",
+                    "schema_version": 1,
+                    "values": {
+                        "description": "Allow TLS inbound traffic and all outbound traffic",
+                        "egress": [
+                            {
+                                "cidr_blocks": [
+                                    "0.0.0.0/0"
+                                ],
+                                "description": "",
+                                "from_port": 0,
+                                "ipv6_cidr_blocks": [
+                                    "::/0"
+                                ],
+                                "prefix_list_ids": [],
+                                "protocol": "-1",
+                                "security_groups": [],
+                                "self": false,
+                                "to_port": 0
+                            }
+                        ],
+                        "ingress": [
+                            {
+                                "cidr_blocks": [
+                                    "0.0.0.0/0"
+                                ],
+                                "description": "",
+                                "from_port": 0,
+                                "ipv6_cidr_blocks": [
+                                    "::/0"
+                                ],
+                                "prefix_list_ids": [],
+                                "protocol": "-1",
+                                "security_groups": [],
+                                "self": false,
+                                "to_port": 0
+                            }
+                        ],
+                        "name": "allow-all-roboshop",
+                        "region": "us-east-1",
+                        "revoke_rules_on_delete": false,
+                        "tags": {
+                            "Name": "allow-all-terraform"
+                        },
+                        "tags_all": {
+                            "Name": "allow-all-terraform"
+                        },
+                        "timeouts": null
+                    },
+                    "sensitive_values": {
+                        "egress": [
+                            {
+                                "cidr_blocks": [
+                                    false
+                                ],
+                                "ipv6_cidr_blocks": [
+                                    false
+                                ],
+                                "prefix_list_ids": [],
+                                "security_groups": []
+                            }
+                        ],
+                        "ingress": [
+                            {
+                                "cidr_blocks": [
+                                    false
+                                ],
+                                "ipv6_cidr_blocks": [
+                                    false
+                                ],
+                                "prefix_list_ids": [],
+                                "security_groups": []
+                            }
+                        ],
+                        "tags": {},
+                        "tags_all": {}
+                    },
+                    "identity_schema_version": 0,
+                    "identity": {
+                        "account_id": null,
+                        "id": null,
+                        "region": null
+                    }
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "aws_instance.example[0]",
+            "mode": "managed",
+            "type": "aws_instance",
+            "name": "example",
+            "index": 0,
+            "provider_name": "registry.terraform.io/hashicorp/aws",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "ami": "ami-0220d79f3f480ecf5",
+                    "credit_specification": [],
+                    "force_destroy": false,
+                    "get_password_data": false,
+                    "hibernation": null,
+                    "instance_type": "t3.micro",
+                    "launch_template": [],
+                    "region": "us-east-1",
+                    "source_dest_check": true,
+                    "tags": {
+                        "Name": "mongodb",
+                        "Project": "roboshop"
+                    },
+                    "tags_all": {
+                        "Name": "mongodb",
+                        "Project": "roboshop"
+                    },
+                    "timeouts": null,
+                    "user_data": null,
+                    "user_data_replace_on_change": false,
+                    "volume_tags": null
+                },
+                "after_unknown": {
+                    "arn": true,
+                    "associate_public_ip_address": true,
+                    "availability_zone": true,
+                    "capacity_reservation_specification": true,
+                    "cpu_options": true,
+                    "credit_specification": [],
+                    "disable_api_stop": true,
+                    "disable_api_termination": true,
+                    "ebs_block_device": true,
+                    "ebs_optimized": true,
+                    "enable_primary_ipv6": true,
+                    "enclave_options": true,
+                    "ephemeral_block_device": true,
+                    "host_id": true,
+                    "host_resource_group_arn": true,
+                    "iam_instance_profile": true,
+                    "id": true,
+                    "instance_initiated_shutdown_behavior": true,
+                    "instance_lifecycle": true,
+                    "instance_market_options": true,
+                    "instance_state": true,
+                    "ipv6_address_count": true,
+                    "ipv6_addresses": true,
+                    "key_name": true,
+                    "launch_template": [],
+                    "maintenance_options": true,
+                    "metadata_options": true,
+                    "monitoring": true,
+                    "network_interface": true,
+                    "outpost_arn": true,
+                    "password_data": true,
+                    "placement_group": true,
+                    "placement_group_id": true,
+                    "placement_partition_number": true,
+                    "primary_network_interface": true,
+                    "primary_network_interface_id": true,
+                    "private_dns": true,
+                    "private_dns_name_options": true,
+                    "private_ip": true,
+                    "public_dns": true,
+                    "public_ip": true,
+                    "root_block_device": true,
+                    "secondary_network_interface": true,
+                    "secondary_private_ips": true,
+                    "security_groups": true,
+                    "spot_instance_request_id": true,
+                    "subnet_id": true,
+                    "tags": {},
+                    "tags_all": {},
+                    "tenancy": true,
+                    "user_data_base64": true,
+                    "vpc_security_group_ids": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "capacity_reservation_specification": [],
+                    "cpu_options": [],
+                    "credit_specification": [],
+                    "ebs_block_device": [],
+                    "enclave_options": [],
+                    "ephemeral_block_device": [],
+                    "instance_market_options": [],
+                    "ipv6_addresses": [],
+                    "launch_template": [],
+                    "maintenance_options": [],
+                    "metadata_options": [],
+                    "network_interface": [],
+                    "primary_network_interface": [],
+                    "private_dns_name_options": [],
+                    "root_block_device": [],
+                    "secondary_network_interface": [],
+                    "secondary_private_ips": [],
+                    "security_groups": [],
+                    "tags": {},
+                    "tags_all": {},
+                    "vpc_security_group_ids": []
+                },
+                "after_identity": {
+                    "account_id": null,
+                    "id": null,
+                    "region": null
+                }
+            }
+        },
+        {
+            "address": "aws_instance.example[1]",
+            "mode": "managed",
+            "type": "aws_instance",
+            "name": "example",
+            "index": 1,
+            "provider_name": "registry.terraform.io/hashicorp/aws",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "ami": "ami-0220d79f3f480ecf5",
+                    "credit_specification": [],
+                    "force_destroy": false,
+                    "get_password_data": false,
+                    "hibernation": null,
+                    "instance_type": "t3.micro",
+                    "launch_template": [],
+                    "region": "us-east-1",
+                    "source_dest_check": true,
+                    "tags": {
+                        "Name": "redis",
+                        "Project": "roboshop"
+                    },
+                    "tags_all": {
+                        "Name": "redis",
+                        "Project": "roboshop"
+                    },
+                    "timeouts": null,
+                    "user_data": null,
+                    "user_data_replace_on_change": false,
+                    "volume_tags": null
+                },
+                "after_unknown": {
+                    "arn": true,
+                    "associate_public_ip_address": true,
+                    "availability_zone": true,
+                    "capacity_reservation_specification": true,
+                    "cpu_options": true,
+                    "credit_specification": [],
+                    "disable_api_stop": true,
+                    "disable_api_termination": true,
+                    "ebs_block_device": true,
+                    "ebs_optimized": true,
+                    "enable_primary_ipv6": true,
+                    "enclave_options": true,
+                    "ephemeral_block_device": true,
+                    "host_id": true,
+                    "host_resource_group_arn": true,
+                    "iam_instance_profile": true,
+                    "id": true,
+                    "instance_initiated_shutdown_behavior": true,
+                    "instance_lifecycle": true,
+                    "instance_market_options": true,
+                    "instance_state": true,
+                    "ipv6_address_count": true,
+                    "ipv6_addresses": true,
+                    "key_name": true,
+                    "launch_template": [],
+                    "maintenance_options": true,
+                    "metadata_options": true,
+                    "monitoring": true,
+                    "network_interface": true,
+                    "outpost_arn": true,
+                    "password_data": true,
+                    "placement_group": true,
+                    "placement_group_id": true,
+                    "placement_partition_number": true,
+                    "primary_network_interface": true,
+                    "primary_network_interface_id": true,
+                    "private_dns": true,
+                    "private_dns_name_options": true,
+                    "private_ip": true,
+                    "public_dns": true,
+                    "public_ip": true,
+                    "root_block_device": true,
+                    "secondary_network_interface": true,
+                    "secondary_private_ips": true,
+                    "security_groups": true,
+                    "spot_instance_request_id": true,
+                    "subnet_id": true,
+                    "tags": {},
+                    "tags_all": {},
+                    "tenancy": true,
+                    "user_data_base64": true,
+                    "vpc_security_group_ids": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "capacity_reservation_specification": [],
+                    "cpu_options": [],
+                    "credit_specification": [],
+                    "ebs_block_device": [],
+                    "enclave_options": [],
+                    "ephemeral_block_device": [],
+                    "instance_market_options": [],
+                    "ipv6_addresses": [],
+                    "launch_template": [],
+                    "maintenance_options": [],
+                    "metadata_options": [],
+                    "network_interface": [],
+                    "primary_network_interface": [],
+                    "private_dns_name_options": [],
+                    "root_block_device": [],
+                    "secondary_network_interface": [],
+                    "secondary_private_ips": [],
+                    "security_groups": [],
+                    "tags": {},
+                    "tags_all": {},
+                    "vpc_security_group_ids": []
+                },
+                "after_identity": {
+                    "account_id": null,
+                    "id": null,
+                    "region": null
+                }
+            }
+        },
+        {
+            "address": "aws_instance.example[2]",
+            "mode": "managed",
+            "type": "aws_instance",
+            "name": "example",
+            "index": 2,
+            "provider_name": "registry.terraform.io/hashicorp/aws",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "ami": "ami-0220d79f3f480ecf5",
+                    "credit_specification": [],
+                    "force_destroy": false,
+                    "get_password_data": false,
+                    "hibernation": null,
+                    "instance_type": "t3.micro",
+                    "launch_template": [],
+                    "region": "us-east-1",
+                    "source_dest_check": true,
+                    "tags": {
+                        "Name": "mysql",
+                        "Project": "roboshop"
+                    },
+                    "tags_all": {
+                        "Name": "mysql",
+                        "Project": "roboshop"
+                    },
+                    "timeouts": null,
+                    "user_data": null,
+                    "user_data_replace_on_change": false,
+                    "volume_tags": null
+                },
+                "after_unknown": {
+                    "arn": true,
+                    "associate_public_ip_address": true,
+                    "availability_zone": true,
+                    "capacity_reservation_specification": true,
+                    "cpu_options": true,
+                    "credit_specification": [],
+                    "disable_api_stop": true,
+                    "disable_api_termination": true,
+                    "ebs_block_device": true,
+                    "ebs_optimized": true,
+                    "enable_primary_ipv6": true,
+                    "enclave_options": true,
+                    "ephemeral_block_device": true,
+                    "host_id": true,
+                    "host_resource_group_arn": true,
+                    "iam_instance_profile": true,
+                    "id": true,
+                    "instance_initiated_shutdown_behavior": true,
+                    "instance_lifecycle": true,
+                    "instance_market_options": true,
+                    "instance_state": true,
+                    "ipv6_address_count": true,
+                    "ipv6_addresses": true,
+                    "key_name": true,
+                    "launch_template": [],
+                    "maintenance_options": true,
+                    "metadata_options": true,
+                    "monitoring": true,
+                    "network_interface": true,
+                    "outpost_arn": true,
+                    "password_data": true,
+                    "placement_group": true,
+                    "placement_group_id": true,
+                    "placement_partition_number": true,
+                    "primary_network_interface": true,
+                    "primary_network_interface_id": true,
+                    "private_dns": true,
+                    "private_dns_name_options": true,
+                    "private_ip": true,
+                    "public_dns": true,
+                    "public_ip": true,
+                    "root_block_device": true,
+                    "secondary_network_interface": true,
+                    "secondary_private_ips": true,
+                    "security_groups": true,
+                    "spot_instance_request_id": true,
+                    "subnet_id": true,
+                    "tags": {},
+                    "tags_all": {},
+                    "tenancy": true,
+                    "user_data_base64": true,
+                    "vpc_security_group_ids": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "capacity_reservation_specification": [],
+                    "cpu_options": [],
+                    "credit_specification": [],
+                    "ebs_block_device": [],
+                    "enclave_options": [],
+                    "ephemeral_block_device": [],
+                    "instance_market_options": [],
+                    "ipv6_addresses": [],
+                    "launch_template": [],
+                    "maintenance_options": [],
+                    "metadata_options": [],
+                    "network_interface": [],
+                    "primary_network_interface": [],
+                    "private_dns_name_options": [],
+                    "root_block_device": [],
+                    "secondary_network_interface": [],
+                    "secondary_private_ips": [],
+                    "security_groups": [],
+                    "tags": {},
+                    "tags_all": {},
+                    "vpc_security_group_ids": []
+                },
+                "after_identity": {
+                    "account_id": null,
+                    "id": null,
+                    "region": null
+                }
+            }
+        },
+        {
+            "address": "aws_instance.example[3]",
+            "mode": "managed",
+            "type": "aws_instance",
+            "name": "example",
+            "index": 3,
+            "provider_name": "registry.terraform.io/hashicorp/aws",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "ami": "ami-0220d79f3f480ecf5",
+                    "credit_specification": [],
+                    "force_destroy": false,
+                    "get_password_data": false,
+                    "hibernation": null,
+                    "instance_type": "t3.micro",
+                    "launch_template": [],
+                    "region": "us-east-1",
+                    "source_dest_check": true,
+                    "tags": {
+                        "Name": "rabbitmq",
+                        "Project": "roboshop"
+                    },
+                    "tags_all": {
+                        "Name": "rabbitmq",
+                        "Project": "roboshop"
+                    },
+                    "timeouts": null,
+                    "user_data": null,
+                    "user_data_replace_on_change": false,
+                    "volume_tags": null
+                },
+                "after_unknown": {
+                    "arn": true,
+                    "associate_public_ip_address": true,
+                    "availability_zone": true,
+                    "capacity_reservation_specification": true,
+                    "cpu_options": true,
+                    "credit_specification": [],
+                    "disable_api_stop": true,
+                    "disable_api_termination": true,
+                    "ebs_block_device": true,
+                    "ebs_optimized": true,
+                    "enable_primary_ipv6": true,
+                    "enclave_options": true,
+                    "ephemeral_block_device": true,
+                    "host_id": true,
+                    "host_resource_group_arn": true,
+                    "iam_instance_profile": true,
+                    "id": true,
+                    "instance_initiated_shutdown_behavior": true,
+                    "instance_lifecycle": true,
+                    "instance_market_options": true,
+                    "instance_state": true,
+                    "ipv6_address_count": true,
+                    "ipv6_addresses": true,
+                    "key_name": true,
+                    "launch_template": [],
+                    "maintenance_options": true,
+                    "metadata_options": true,
+                    "monitoring": true,
+                    "network_interface": true,
+                    "outpost_arn": true,
+                    "password_data": true,
+                    "placement_group": true,
+                    "placement_group_id": true,
+                    "placement_partition_number": true,
+                    "primary_network_interface": true,
+                    "primary_network_interface_id": true,
+                    "private_dns": true,
+                    "private_dns_name_options": true,
+                    "private_ip": true,
+                    "public_dns": true,
+                    "public_ip": true,
+                    "root_block_device": true,
+                    "secondary_network_interface": true,
+                    "secondary_private_ips": true,
+                    "security_groups": true,
+                    "spot_instance_request_id": true,
+                    "subnet_id": true,
+                    "tags": {},
+                    "tags_all": {},
+                    "tenancy": true,
+                    "user_data_base64": true,
+                    "vpc_security_group_ids": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "capacity_reservation_specification": [],
+                    "cpu_options": [],
+                    "credit_specification": [],
+                    "ebs_block_device": [],
+                    "enclave_options": [],
+                    "ephemeral_block_device": [],
+                    "instance_market_options": [],
+                    "ipv6_addresses": [],
+                    "launch_template": [],
+                    "maintenance_options": [],
+                    "metadata_options": [],
+                    "network_interface": [],
+                    "primary_network_interface": [],
+                    "private_dns_name_options": [],
+                    "root_block_device": [],
+                    "secondary_network_interface": [],
+                    "secondary_private_ips": [],
+                    "security_groups": [],
+                    "tags": {},
+                    "tags_all": {},
+                    "vpc_security_group_ids": []
+                },
+                "after_identity": {
+                    "account_id": null,
+                    "id": null,
+                    "region": null
+                }
+            }
+        },
+        {
+            "address": "aws_instance.example[4]",
+            "mode": "managed",
+            "type": "aws_instance",
+            "name": "example",
+            "index": 4,
+            "provider_name": "registry.terraform.io/hashicorp/aws",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "ami": "ami-0220d79f3f480ecf5",
+                    "credit_specification": [],
+                    "force_destroy": false,
+                    "get_password_data": false,
+                    "hibernation": null,
+                    "instance_type": "t3.micro",
+                    "launch_template": [],
+                    "region": "us-east-1",
+                    "source_dest_check": true,
+                    "tags": {
+                        "Name": "catalogue",
+                        "Project": "roboshop"
+                    },
+                    "tags_all": {
+                        "Name": "catalogue",
+                        "Project": "roboshop"
+                    },
+                    "timeouts": null,
+                    "user_data": null,
+                    "user_data_replace_on_change": false,
+                    "volume_tags": null
+                },
+                "after_unknown": {
+                    "arn": true,
+                    "associate_public_ip_address": true,
+                    "availability_zone": true,
+                    "capacity_reservation_specification": true,
+                    "cpu_options": true,
+                    "credit_specification": [],
+                    "disable_api_stop": true,
+                    "disable_api_termination": true,
+                    "ebs_block_device": true,
+                    "ebs_optimized": true,
+                    "enable_primary_ipv6": true,
+                    "enclave_options": true,
+                    "ephemeral_block_device": true,
+                    "host_id": true,
+                    "host_resource_group_arn": true,
+                    "iam_instance_profile": true,
+                    "id": true,
+                    "instance_initiated_shutdown_behavior": true,
+                    "instance_lifecycle": true,
+                    "instance_market_options": true,
+                    "instance_state": true,
+                    "ipv6_address_count": true,
+                    "ipv6_addresses": true,
+                    "key_name": true,
+                    "launch_template": [],
+                    "maintenance_options": true,
+                    "metadata_options": true,
+                    "monitoring": true,
+                    "network_interface": true,
+                    "outpost_arn": true,
+                    "password_data": true,
+                    "placement_group": true,
+                    "placement_group_id": true,
+                    "placement_partition_number": true,
+                    "primary_network_interface": true,
+                    "primary_network_interface_id": true,
+                    "private_dns": true,
+                    "private_dns_name_options": true,
+                    "private_ip": true,
+                    "public_dns": true,
+                    "public_ip": true,
+                    "root_block_device": true,
+                    "secondary_network_interface": true,
+                    "secondary_private_ips": true,
+                    "security_groups": true,
+                    "spot_instance_request_id": true,
+                    "subnet_id": true,
+                    "tags": {},
+                    "tags_all": {},
+                    "tenancy": true,
+                    "user_data_base64": true,
+                    "vpc_security_group_ids": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "capacity_reservation_specification": [],
+                    "cpu_options": [],
+                    "credit_specification": [],
+                    "ebs_block_device": [],
+                    "enclave_options": [],
+                    "ephemeral_block_device": [],
+                    "instance_market_options": [],
+                    "ipv6_addresses": [],
+                    "launch_template": [],
+                    "maintenance_options": [],
+                    "metadata_options": [],
+                    "network_interface": [],
+                    "primary_network_interface": [],
+                    "private_dns_name_options": [],
+                    "root_block_device": [],
+                    "secondary_network_interface": [],
+                    "secondary_private_ips": [],
+                    "security_groups": [],
+                    "tags": {},
+                    "tags_all": {},
+                    "vpc_security_group_ids": []
+                },
+                "after_identity": {
+                    "account_id": null,
+                    "id": null,
+                    "region": null
+                }
+            }
+        },
+        {
+            "address": "aws_instance.example[5]",
+            "mode": "managed",
+            "type": "aws_instance",
+            "name": "example",
+            "index": 5,
+            "provider_name": "registry.terraform.io/hashicorp/aws",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "ami": "ami-0220d79f3f480ecf5",
+                    "credit_specification": [],
+                    "force_destroy": false,
+                    "get_password_data": false,
+                    "hibernation": null,
+                    "instance_type": "t3.micro",
+                    "launch_template": [],
+                    "region": "us-east-1",
+                    "source_dest_check": true,
+                    "tags": {
+                        "Name": "user",
+                        "Project": "roboshop"
+                    },
+                    "tags_all": {
+                        "Name": "user",
+                        "Project": "roboshop"
+                    },
+                    "timeouts": null,
+                    "user_data": null,
+                    "user_data_replace_on_change": false,
+                    "volume_tags": null
+                },
+                "after_unknown": {
+                    "arn": true,
+                    "associate_public_ip_address": true,
+                    "availability_zone": true,
+                    "capacity_reservation_specification": true,
+                    "cpu_options": true,
+                    "credit_specification": [],
+                    "disable_api_stop": true,
+                    "disable_api_termination": true,
+                    "ebs_block_device": true,
+                    "ebs_optimized": true,
+                    "enable_primary_ipv6": true,
+                    "enclave_options": true,
+                    "ephemeral_block_device": true,
+                    "host_id": true,
+                    "host_resource_group_arn": true,
+                    "iam_instance_profile": true,
+                    "id": true,
+                    "instance_initiated_shutdown_behavior": true,
+                    "instance_lifecycle": true,
+                    "instance_market_options": true,
+                    "instance_state": true,
+                    "ipv6_address_count": true,
+                    "ipv6_addresses": true,
+                    "key_name": true,
+                    "launch_template": [],
+                    "maintenance_options": true,
+                    "metadata_options": true,
+                    "monitoring": true,
+                    "network_interface": true,
+                    "outpost_arn": true,
+                    "password_data": true,
+                    "placement_group": true,
+                    "placement_group_id": true,
+                    "placement_partition_number": true,
+                    "primary_network_interface": true,
+                    "primary_network_interface_id": true,
+                    "private_dns": true,
+                    "private_dns_name_options": true,
+                    "private_ip": true,
+                    "public_dns": true,
+                    "public_ip": true,
+                    "root_block_device": true,
+                    "secondary_network_interface": true,
+                    "secondary_private_ips": true,
+                    "security_groups": true,
+                    "spot_instance_request_id": true,
+                    "subnet_id": true,
+                    "tags": {},
+                    "tags_all": {},
+                    "tenancy": true,
+                    "user_data_base64": true,
+                    "vpc_security_group_ids": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "capacity_reservation_specification": [],
+                    "cpu_options": [],
+                    "credit_specification": [],
+                    "ebs_block_device": [],
+                    "enclave_options": [],
+                    "ephemeral_block_device": [],
+                    "instance_market_options": [],
+                    "ipv6_addresses": [],
+                    "launch_template": [],
+                    "maintenance_options": [],
+                    "metadata_options": [],
+                    "network_interface": [],
+                    "primary_network_interface": [],
+                    "private_dns_name_options": [],
+                    "root_block_device": [],
+                    "secondary_network_interface": [],
+                    "secondary_private_ips": [],
+                    "security_groups": [],
+                    "tags": {},
+                    "tags_all": {},
+                    "vpc_security_group_ids": []
+                },
+                "after_identity": {
+                    "account_id": null,
+                    "id": null,
+                    "region": null
+                }
+            }
+        },
+        {
+            "address": "aws_instance.example[6]",
+            "mode": "managed",
+            "type": "aws_instance",
+            "name": "example",
+            "index": 6,
+            "provider_name": "registry.terraform.io/hashicorp/aws",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "ami": "ami-0220d79f3f480ecf5",
+                    "credit_specification": [],
+                    "force_destroy": false,
+                    "get_password_data": false,
+                    "hibernation": null,
+                    "instance_type": "t3.micro",
+                    "launch_template": [],
+                    "region": "us-east-1",
+                    "source_dest_check": true,
+                    "tags": {
+                        "Name": "cart",
+                        "Project": "roboshop"
+                    },
+                    "tags_all": {
+                        "Name": "cart",
+                        "Project": "roboshop"
+                    },
+                    "timeouts": null,
+                    "user_data": null,
+                    "user_data_replace_on_change": false,
+                    "volume_tags": null
+                },
+                "after_unknown": {
+                    "arn": true,
+                    "associate_public_ip_address": true,
+                    "availability_zone": true,
+                    "capacity_reservation_specification": true,
+                    "cpu_options": true,
+                    "credit_specification": [],
+                    "disable_api_stop": true,
+                    "disable_api_termination": true,
+                    "ebs_block_device": true,
+                    "ebs_optimized": true,
+                    "enable_primary_ipv6": true,
+                    "enclave_options": true,
+                    "ephemeral_block_device": true,
+                    "host_id": true,
+                    "host_resource_group_arn": true,
+                    "iam_instance_profile": true,
+                    "id": true,
+                    "instance_initiated_shutdown_behavior": true,
+                    "instance_lifecycle": true,
+                    "instance_market_options": true,
+                    "instance_state": true,
+                    "ipv6_address_count": true,
+                    "ipv6_addresses": true,
+                    "key_name": true,
+                    "launch_template": [],
+                    "maintenance_options": true,
+                    "metadata_options": true,
+                    "monitoring": true,
+                    "network_interface": true,
+                    "outpost_arn": true,
+                    "password_data": true,
+                    "placement_group": true,
+                    "placement_group_id": true,
+                    "placement_partition_number": true,
+                    "primary_network_interface": true,
+                    "primary_network_interface_id": true,
+                    "private_dns": true,
+                    "private_dns_name_options": true,
+                    "private_ip": true,
+                    "public_dns": true,
+                    "public_ip": true,
+                    "root_block_device": true,
+                    "secondary_network_interface": true,
+                    "secondary_private_ips": true,
+                    "security_groups": true,
+                    "spot_instance_request_id": true,
+                    "subnet_id": true,
+                    "tags": {},
+                    "tags_all": {},
+                    "tenancy": true,
+                    "user_data_base64": true,
+                    "vpc_security_group_ids": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "capacity_reservation_specification": [],
+                    "cpu_options": [],
+                    "credit_specification": [],
+                    "ebs_block_device": [],
+                    "enclave_options": [],
+                    "ephemeral_block_device": [],
+                    "instance_market_options": [],
+                    "ipv6_addresses": [],
+                    "launch_template": [],
+                    "maintenance_options": [],
+                    "metadata_options": [],
+                    "network_interface": [],
+                    "primary_network_interface": [],
+                    "private_dns_name_options": [],
+                    "root_block_device": [],
+                    "secondary_network_interface": [],
+                    "secondary_private_ips": [],
+                    "security_groups": [],
+                    "tags": {},
+                    "tags_all": {},
+                    "vpc_security_group_ids": []
+                },
+                "after_identity": {
+                    "account_id": null,
+                    "id": null,
+                    "region": null
+                }
+            }
+        },
+        {
+            "address": "aws_instance.example[7]",
+            "mode": "managed",
+            "type": "aws_instance",
+            "name": "example",
+            "index": 7,
+            "provider_name": "registry.terraform.io/hashicorp/aws",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "ami": "ami-0220d79f3f480ecf5",
+                    "credit_specification": [],
+                    "force_destroy": false,
+                    "get_password_data": false,
+                    "hibernation": null,
+                    "instance_type": "t3.micro",
+                    "launch_template": [],
+                    "region": "us-east-1",
+                    "source_dest_check": true,
+                    "tags": {
+                        "Name": "shipping",
+                        "Project": "roboshop"
+                    },
+                    "tags_all": {
+                        "Name": "shipping",
+                        "Project": "roboshop"
+                    },
+                    "timeouts": null,
+                    "user_data": null,
+                    "user_data_replace_on_change": false,
+                    "volume_tags": null
+                },
+                "after_unknown": {
+                    "arn": true,
+                    "associate_public_ip_address": true,
+                    "availability_zone": true,
+                    "capacity_reservation_specification": true,
+                    "cpu_options": true,
+                    "credit_specification": [],
+                    "disable_api_stop": true,
+                    "disable_api_termination": true,
+                    "ebs_block_device": true,
+                    "ebs_optimized": true,
+                    "enable_primary_ipv6": true,
+                    "enclave_options": true,
+                    "ephemeral_block_device": true,
+                    "host_id": true,
+                    "host_resource_group_arn": true,
+                    "iam_instance_profile": true,
+                    "id": true,
+                    "instance_initiated_shutdown_behavior": true,
+                    "instance_lifecycle": true,
+                    "instance_market_options": true,
+                    "instance_state": true,
+                    "ipv6_address_count": true,
+                    "ipv6_addresses": true,
+                    "key_name": true,
+                    "launch_template": [],
+                    "maintenance_options": true,
+                    "metadata_options": true,
+                    "monitoring": true,
+                    "network_interface": true,
+                    "outpost_arn": true,
+                    "password_data": true,
+                    "placement_group": true,
+                    "placement_group_id": true,
+                    "placement_partition_number": true,
+                    "primary_network_interface": true,
+                    "primary_network_interface_id": true,
+                    "private_dns": true,
+                    "private_dns_name_options": true,
+                    "private_ip": true,
+                    "public_dns": true,
+                    "public_ip": true,
+                    "root_block_device": true,
+                    "secondary_network_interface": true,
+                    "secondary_private_ips": true,
+                    "security_groups": true,
+                    "spot_instance_request_id": true,
+                    "subnet_id": true,
+                    "tags": {},
+                    "tags_all": {},
+                    "tenancy": true,
+                    "user_data_base64": true,
+                    "vpc_security_group_ids": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "capacity_reservation_specification": [],
+                    "cpu_options": [],
+                    "credit_specification": [],
+                    "ebs_block_device": [],
+                    "enclave_options": [],
+                    "ephemeral_block_device": [],
+                    "instance_market_options": [],
+                    "ipv6_addresses": [],
+                    "launch_template": [],
+                    "maintenance_options": [],
+                    "metadata_options": [],
+                    "network_interface": [],
+                    "primary_network_interface": [],
+                    "private_dns_name_options": [],
+                    "root_block_device": [],
+                    "secondary_network_interface": [],
+                    "secondary_private_ips": [],
+                    "security_groups": [],
+                    "tags": {},
+                    "tags_all": {},
+                    "vpc_security_group_ids": []
+                },
+                "after_identity": {
+                    "account_id": null,
+                    "id": null,
+                    "region": null
+                }
+            }
+        },
+        {
+            "address": "aws_instance.example[8]",
+            "mode": "managed",
+            "type": "aws_instance",
+            "name": "example",
+            "index": 8,
+            "provider_name": "registry.terraform.io/hashicorp/aws",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "ami": "ami-0220d79f3f480ecf5",
+                    "credit_specification": [],
+                    "force_destroy": false,
+                    "get_password_data": false,
+                    "hibernation": null,
+                    "instance_type": "t3.micro",
+                    "launch_template": [],
+                    "region": "us-east-1",
+                    "source_dest_check": true,
+                    "tags": {
+                        "Name": "payment",
+                        "Project": "roboshop"
+                    },
+                    "tags_all": {
+                        "Name": "payment",
+                        "Project": "roboshop"
+                    },
+                    "timeouts": null,
+                    "user_data": null,
+                    "user_data_replace_on_change": false,
+                    "volume_tags": null
+                },
+                "after_unknown": {
+                    "arn": true,
+                    "associate_public_ip_address": true,
+                    "availability_zone": true,
+                    "capacity_reservation_specification": true,
+                    "cpu_options": true,
+                    "credit_specification": [],
+                    "disable_api_stop": true,
+                    "disable_api_termination": true,
+                    "ebs_block_device": true,
+                    "ebs_optimized": true,
+                    "enable_primary_ipv6": true,
+                    "enclave_options": true,
+                    "ephemeral_block_device": true,
+                    "host_id": true,
+                    "host_resource_group_arn": true,
+                    "iam_instance_profile": true,
+                    "id": true,
+                    "instance_initiated_shutdown_behavior": true,
+                    "instance_lifecycle": true,
+                    "instance_market_options": true,
+                    "instance_state": true,
+                    "ipv6_address_count": true,
+                    "ipv6_addresses": true,
+                    "key_name": true,
+                    "launch_template": [],
+                    "maintenance_options": true,
+                    "metadata_options": true,
+                    "monitoring": true,
+                    "network_interface": true,
+                    "outpost_arn": true,
+                    "password_data": true,
+                    "placement_group": true,
+                    "placement_group_id": true,
+                    "placement_partition_number": true,
+                    "primary_network_interface": true,
+                    "primary_network_interface_id": true,
+                    "private_dns": true,
+                    "private_dns_name_options": true,
+                    "private_ip": true,
+                    "public_dns": true,
+                    "public_ip": true,
+                    "root_block_device": true,
+                    "secondary_network_interface": true,
+                    "secondary_private_ips": true,
+                    "security_groups": true,
+                    "spot_instance_request_id": true,
+                    "subnet_id": true,
+                    "tags": {},
+                    "tags_all": {},
+                    "tenancy": true,
+                    "user_data_base64": true,
+                    "vpc_security_group_ids": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "capacity_reservation_specification": [],
+                    "cpu_options": [],
+                    "credit_specification": [],
+                    "ebs_block_device": [],
+                    "enclave_options": [],
+                    "ephemeral_block_device": [],
+                    "instance_market_options": [],
+                    "ipv6_addresses": [],
+                    "launch_template": [],
+                    "maintenance_options": [],
+                    "metadata_options": [],
+                    "network_interface": [],
+                    "primary_network_interface": [],
+                    "private_dns_name_options": [],
+                    "root_block_device": [],
+                    "secondary_network_interface": [],
+                    "secondary_private_ips": [],
+                    "security_groups": [],
+                    "tags": {},
+                    "tags_all": {},
+                    "vpc_security_group_ids": []
+                },
+                "after_identity": {
+                    "account_id": null,
+                    "id": null,
+                    "region": null
+                }
+            }
+        },
+        {
+            "address": "aws_instance.example[9]",
+            "mode": "managed",
+            "type": "aws_instance",
+            "name": "example",
+            "index": 9,
+            "provider_name": "registry.terraform.io/hashicorp/aws",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "ami": "ami-0220d79f3f480ecf5",
+                    "credit_specification": [],
+                    "force_destroy": false,
+                    "get_password_data": false,
+                    "hibernation": null,
+                    "instance_type": "t3.micro",
+                    "launch_template": [],
+                    "region": "us-east-1",
+                    "source_dest_check": true,
+                    "tags": {
+                        "Name": "frontend",
+                        "Project": "roboshop"
+                    },
+                    "tags_all": {
+                        "Name": "frontend",
+                        "Project": "roboshop"
+                    },
+                    "timeouts": null,
+                    "user_data": null,
+                    "user_data_replace_on_change": false,
+                    "volume_tags": null
+                },
+                "after_unknown": {
+                    "arn": true,
+                    "associate_public_ip_address": true,
+                    "availability_zone": true,
+                    "capacity_reservation_specification": true,
+                    "cpu_options": true,
+                    "credit_specification": [],
+                    "disable_api_stop": true,
+                    "disable_api_termination": true,
+                    "ebs_block_device": true,
+                    "ebs_optimized": true,
+                    "enable_primary_ipv6": true,
+                    "enclave_options": true,
+                    "ephemeral_block_device": true,
+                    "host_id": true,
+                    "host_resource_group_arn": true,
+                    "iam_instance_profile": true,
+                    "id": true,
+                    "instance_initiated_shutdown_behavior": true,
+                    "instance_lifecycle": true,
+                    "instance_market_options": true,
+                    "instance_state": true,
+                    "ipv6_address_count": true,
+                    "ipv6_addresses": true,
+                    "key_name": true,
+                    "launch_template": [],
+                    "maintenance_options": true,
+                    "metadata_options": true,
+                    "monitoring": true,
+                    "network_interface": true,
+                    "outpost_arn": true,
+                    "password_data": true,
+                    "placement_group": true,
+                    "placement_group_id": true,
+                    "placement_partition_number": true,
+                    "primary_network_interface": true,
+                    "primary_network_interface_id": true,
+                    "private_dns": true,
+                    "private_dns_name_options": true,
+                    "private_ip": true,
+                    "public_dns": true,
+                    "public_ip": true,
+                    "root_block_device": true,
+                    "secondary_network_interface": true,
+                    "secondary_private_ips": true,
+                    "security_groups": true,
+                    "spot_instance_request_id": true,
+                    "subnet_id": true,
+                    "tags": {},
+                    "tags_all": {},
+                    "tenancy": true,
+                    "user_data_base64": true,
+                    "vpc_security_group_ids": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "capacity_reservation_specification": [],
+                    "cpu_options": [],
+                    "credit_specification": [],
+                    "ebs_block_device": [],
+                    "enclave_options": [],
+                    "ephemeral_block_device": [],
+                    "instance_market_options": [],
+                    "ipv6_addresses": [],
+                    "launch_template": [],
+                    "maintenance_options": [],
+                    "metadata_options": [],
+                    "network_interface": [],
+                    "primary_network_interface": [],
+                    "private_dns_name_options": [],
+                    "root_block_device": [],
+                    "secondary_network_interface": [],
+                    "secondary_private_ips": [],
+                    "security_groups": [],
+                    "tags": {},
+                    "tags_all": {},
+                    "vpc_security_group_ids": []
+                },
+                "after_identity": {
+                    "account_id": null,
+                    "id": null,
+                    "region": null
+                }
+            }
+        },
+        {
+            "address": "aws_security_group.allow_tls",
+            "mode": "managed",
+            "type": "aws_security_group",
+            "name": "allow_tls",
+            "provider_name": "registry.terraform.io/hashicorp/aws",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "description": "Allow TLS inbound traffic and all outbound traffic",
+                    "egress": [
+                        {
+                            "cidr_blocks": [
+                                "0.0.0.0/0"
+                            ],
+                            "description": "",
+                            "from_port": 0,
+                            "ipv6_cidr_blocks": [
+                                "::/0"
+                            ],
+                            "prefix_list_ids": [],
+                            "protocol": "-1",
+                            "security_groups": [],
+                            "self": false,
+                            "to_port": 0
+                        }
+                    ],
+                    "ingress": [
+                        {
+                            "cidr_blocks": [
+                                "0.0.0.0/0"
+                            ],
+                            "description": "",
+                            "from_port": 0,
+                            "ipv6_cidr_blocks": [
+                                "::/0"
+                            ],
+                            "prefix_list_ids": [],
+                            "protocol": "-1",
+                            "security_groups": [],
+                            "self": false,
+                            "to_port": 0
+                        }
+                    ],
+                    "name": "allow-all-roboshop",
+                    "region": "us-east-1",
+                    "revoke_rules_on_delete": false,
+                    "tags": {
+                        "Name": "allow-all-terraform"
+                    },
+                    "tags_all": {
+                        "Name": "allow-all-terraform"
+                    },
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "arn": true,
+                    "egress": [
+                        {
+                            "cidr_blocks": [
+                                false
+                            ],
+                            "ipv6_cidr_blocks": [
+                                false
+                            ],
+                            "prefix_list_ids": [],
+                            "security_groups": []
+                        }
+                    ],
+                    "id": true,
+                    "ingress": [
+                        {
+                            "cidr_blocks": [
+                                false
+                            ],
+                            "ipv6_cidr_blocks": [
+                                false
+                            ],
+                            "prefix_list_ids": [],
+                            "security_groups": []
+                        }
+                    ],
+                    "name_prefix": true,
+                    "owner_id": true,
+                    "tags": {},
+                    "tags_all": {},
+                    "vpc_id": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "egress": [
+                        {
+                            "cidr_blocks": [
+                                false
+                            ],
+                            "ipv6_cidr_blocks": [
+                                false
+                            ],
+                            "prefix_list_ids": [],
+                            "security_groups": []
+                        }
+                    ],
+                    "ingress": [
+                        {
+                            "cidr_blocks": [
+                                false
+                            ],
+                            "ipv6_cidr_blocks": [
+                                false
+                            ],
+                            "prefix_list_ids": [],
+                            "security_groups": []
+                        }
+                    ],
+                    "tags": {},
+                    "tags_all": {}
+                },
+                "after_identity": {
+                    "account_id": null,
+                    "id": null,
+                    "region": null
+                }
+            }
+        }
+    ],
+    "output_changes": {
+        "roboshop_instances": {
+            "actions": [
+                "create"
+            ],
+            "before": null,
+            "after": [
+                {
+                    "ami": "ami-0220d79f3f480ecf5",
+                    "credit_specification": [],
+                    "force_destroy": false,
+                    "get_password_data": false,
+                    "hibernation": null,
+                    "instance_type": "t3.micro",
+                    "launch_template": [],
+                    "region": "us-east-1",
+                    "source_dest_check": true,
+                    "tags": {
+                        "Name": "mongodb",
+                        "Project": "roboshop"
+                    },
+                    "tags_all": {
+                        "Name": "mongodb",
+                        "Project": "roboshop"
+                    },
+                    "timeouts": null,
+                    "user_data": null,
+                    "user_data_replace_on_change": false,
+                    "volume_tags": null
+                },
+                {
+                    "ami": "ami-0220d79f3f480ecf5",
+                    "credit_specification": [],
+                    "force_destroy": false,
+                    "get_password_data": false,
+                    "hibernation": null,
+                    "instance_type": "t3.micro",
+                    "launch_template": [],
+                    "region": "us-east-1",
+                    "source_dest_check": true,
+                    "tags": {
+                        "Name": "redis",
+                        "Project": "roboshop"
+                    },
+                    "tags_all": {
+                        "Name": "redis",
+                        "Project": "roboshop"
+                    },
+                    "timeouts": null,
+                    "user_data": null,
+                    "user_data_replace_on_change": false,
+                    "volume_tags": null
+                },
+                {
+                    "ami": "ami-0220d79f3f480ecf5",
+                    "credit_specification": [],
+                    "force_destroy": false,
+                    "get_password_data": false,
+                    "hibernation": null,
+                    "instance_type": "t3.micro",
+                    "launch_template": [],
+                    "region": "us-east-1",
+                    "source_dest_check": true,
+                    "tags": {
+                        "Name": "mysql",
+                        "Project": "roboshop"
+                    },
+                    "tags_all": {
+                        "Name": "mysql",
+                        "Project": "roboshop"
+                    },
+                    "timeouts": null,
+                    "user_data": null,
+                    "user_data_replace_on_change": false,
+                    "volume_tags": null
+                },
+                {
+                    "ami": "ami-0220d79f3f480ecf5",
+                    "credit_specification": [],
+                    "force_destroy": false,
+                    "get_password_data": false,
+                    "hibernation": null,
+                    "instance_type": "t3.micro",
+                    "launch_template": [],
+                    "region": "us-east-1",
+                    "source_dest_check": true,
+                    "tags": {
+                        "Name": "rabbitmq",
+                        "Project": "roboshop"
+                    },
+                    "tags_all": {
+                        "Name": "rabbitmq",
+                        "Project": "roboshop"
+                    },
+                    "timeouts": null,
+                    "user_data": null,
+                    "user_data_replace_on_change": false,
+                    "volume_tags": null
+                },
+                {
+                    "ami": "ami-0220d79f3f480ecf5",
+                    "credit_specification": [],
+                    "force_destroy": false,
+                    "get_password_data": false,
+                    "hibernation": null,
+                    "instance_type": "t3.micro",
+                    "launch_template": [],
+                    "region": "us-east-1",
+                    "source_dest_check": true,
+                    "tags": {
+                        "Name": "catalogue",
+                        "Project": "roboshop"
+                    },
+                    "tags_all": {
+                        "Name": "catalogue",
+                        "Project": "roboshop"
+                    },
+                    "timeouts": null,
+                    "user_data": null,
+                    "user_data_replace_on_change": false,
+                    "volume_tags": null
+                },
+                {
+                    "ami": "ami-0220d79f3f480ecf5",
+                    "credit_specification": [],
+                    "force_destroy": false,
+                    "get_password_data": false,
+                    "hibernation": null,
+                    "instance_type": "t3.micro",
+                    "launch_template": [],
+                    "region": "us-east-1",
+                    "source_dest_check": true,
+                    "tags": {
+                        "Name": "user",
+                        "Project": "roboshop"
+                    },
+                    "tags_all": {
+                        "Name": "user",
+                        "Project": "roboshop"
+                    },
+                    "timeouts": null,
+                    "user_data": null,
+                    "user_data_replace_on_change": false,
+                    "volume_tags": null
+                },
+                {
+                    "ami": "ami-0220d79f3f480ecf5",
+                    "credit_specification": [],
+                    "force_destroy": false,
+                    "get_password_data": false,
+                    "hibernation": null,
+                    "instance_type": "t3.micro",
+                    "launch_template": [],
+                    "region": "us-east-1",
+                    "source_dest_check": true,
+                    "tags": {
+                        "Name": "cart",
+                        "Project": "roboshop"
+                    },
+                    "tags_all": {
+                        "Name": "cart",
+                        "Project": "roboshop"
+                    },
+                    "timeouts": null,
+                    "user_data": null,
+                    "user_data_replace_on_change": false,
+                    "volume_tags": null
+                },
+                {
+                    "ami": "ami-0220d79f3f480ecf5",
+                    "credit_specification": [],
+                    "force_destroy": false,
+                    "get_password_data": false,
+                    "hibernation": null,
+                    "instance_type": "t3.micro",
+                    "launch_template": [],
+                    "region": "us-east-1",
+                    "source_dest_check": true,
+                    "tags": {
+                        "Name": "shipping",
+                        "Project": "roboshop"
+                    },
+                    "tags_all": {
+                        "Name": "shipping",
+                        "Project": "roboshop"
+                    },
+                    "timeouts": null,
+                    "user_data": null,
+                    "user_data_replace_on_change": false,
+                    "volume_tags": null
+                },
+                {
+                    "ami": "ami-0220d79f3f480ecf5",
+                    "credit_specification": [],
+                    "force_destroy": false,
+                    "get_password_data": false,
+                    "hibernation": null,
+                    "instance_type": "t3.micro",
+                    "launch_template": [],
+                    "region": "us-east-1",
+                    "source_dest_check": true,
+                    "tags": {
+                        "Name": "payment",
+                        "Project": "roboshop"
+                    },
+                    "tags_all": {
+                        "Name": "payment",
+                        "Project": "roboshop"
+                    },
+                    "timeouts": null,
+                    "user_data": null,
+                    "user_data_replace_on_change": false,
+                    "volume_tags": null
+                },
+                {
+                    "ami": "ami-0220d79f3f480ecf5",
+                    "credit_specification": [],
+                    "force_destroy": false,
+                    "get_password_data": false,
+                    "hibernation": null,
+                    "instance_type": "t3.micro",
+                    "launch_template": [],
+                    "region": "us-east-1",
+                    "source_dest_check": true,
+                    "tags": {
+                        "Name": "frontend",
+                        "Project": "roboshop"
+                    },
+                    "tags_all": {
+                        "Name": "frontend",
+                        "Project": "roboshop"
+                    },
+                    "timeouts": null,
+                    "user_data": null,
+                    "user_data_replace_on_change": false,
+                    "volume_tags": null
+                }
+            ],
+            "after_unknown": [
+                {
+                    "arn": true,
+                    "associate_public_ip_address": true,
+                    "availability_zone": true,
+                    "capacity_reservation_specification": true,
+                    "cpu_options": true,
+                    "credit_specification": [],
+                    "disable_api_stop": true,
+                    "disable_api_termination": true,
+                    "ebs_block_device": true,
+                    "ebs_optimized": true,
+                    "enable_primary_ipv6": true,
+                    "enclave_options": true,
+                    "ephemeral_block_device": true,
+                    "host_id": true,
+                    "host_resource_group_arn": true,
+                    "iam_instance_profile": true,
+                    "id": true,
+                    "instance_initiated_shutdown_behavior": true,
+                    "instance_lifecycle": true,
+                    "instance_market_options": true,
+                    "instance_state": true,
+                    "ipv6_address_count": true,
+                    "ipv6_addresses": true,
+                    "key_name": true,
+                    "launch_template": [],
+                    "maintenance_options": true,
+                    "metadata_options": true,
+                    "monitoring": true,
+                    "network_interface": true,
+                    "outpost_arn": true,
+                    "password_data": true,
+                    "placement_group": true,
+                    "placement_group_id": true,
+                    "placement_partition_number": true,
+                    "primary_network_interface": true,
+                    "primary_network_interface_id": true,
+                    "private_dns": true,
+                    "private_dns_name_options": true,
+                    "private_ip": true,
+                    "public_dns": true,
+                    "public_ip": true,
+                    "root_block_device": true,
+                    "secondary_network_interface": true,
+                    "secondary_private_ips": true,
+                    "security_groups": true,
+                    "spot_instance_request_id": true,
+                    "subnet_id": true,
+                    "tags": {},
+                    "tags_all": {},
+                    "tenancy": true,
+                    "user_data_base64": true,
+                    "vpc_security_group_ids": true
+                },
+                {
+                    "arn": true,
+                    "associate_public_ip_address": true,
+                    "availability_zone": true,
+                    "capacity_reservation_specification": true,
+                    "cpu_options": true,
+                    "credit_specification": [],
+                    "disable_api_stop": true,
+                    "disable_api_termination": true,
+                    "ebs_block_device": true,
+                    "ebs_optimized": true,
+                    "enable_primary_ipv6": true,
+                    "enclave_options": true,
+                    "ephemeral_block_device": true,
+                    "host_id": true,
+                    "host_resource_group_arn": true,
+                    "iam_instance_profile": true,
+                    "id": true,
+                    "instance_initiated_shutdown_behavior": true,
+                    "instance_lifecycle": true,
+                    "instance_market_options": true,
+                    "instance_state": true,
+                    "ipv6_address_count": true,
+                    "ipv6_addresses": true,
+                    "key_name": true,
+                    "launch_template": [],
+                    "maintenance_options": true,
+                    "metadata_options": true,
+                    "monitoring": true,
+                    "network_interface": true,
+                    "outpost_arn": true,
+                    "password_data": true,
+                    "placement_group": true,
+                    "placement_group_id": true,
+                    "placement_partition_number": true,
+                    "primary_network_interface": true,
+                    "primary_network_interface_id": true,
+                    "private_dns": true,
+                    "private_dns_name_options": true,
+                    "private_ip": true,
+                    "public_dns": true,
+                    "public_ip": true,
+                    "root_block_device": true,
+                    "secondary_network_interface": true,
+                    "secondary_private_ips": true,
+                    "security_groups": true,
+                    "spot_instance_request_id": true,
+                    "subnet_id": true,
+                    "tags": {},
+                    "tags_all": {},
+                    "tenancy": true,
+                    "user_data_base64": true,
+                    "vpc_security_group_ids": true
+                },
+                {
+                    "arn": true,
+                    "associate_public_ip_address": true,
+                    "availability_zone": true,
+                    "capacity_reservation_specification": true,
+                    "cpu_options": true,
+                    "credit_specification": [],
+                    "disable_api_stop": true,
+                    "disable_api_termination": true,
+                    "ebs_block_device": true,
+                    "ebs_optimized": true,
+                    "enable_primary_ipv6": true,
+                    "enclave_options": true,
+                    "ephemeral_block_device": true,
+                    "host_id": true,
+                    "host_resource_group_arn": true,
+                    "iam_instance_profile": true,
+                    "id": true,
+                    "instance_initiated_shutdown_behavior": true,
+                    "instance_lifecycle": true,
+                    "instance_market_options": true,
+                    "instance_state": true,
+                    "ipv6_address_count": true,
+                    "ipv6_addresses": true,
+                    "key_name": true,
+                    "launch_template": [],
+                    "maintenance_options": true,
+                    "metadata_options": true,
+                    "monitoring": true,
+                    "network_interface": true,
+                    "outpost_arn": true,
+                    "password_data": true,
+                    "placement_group": true,
+                    "placement_group_id": true,
+                    "placement_partition_number": true,
+                    "primary_network_interface": true,
+                    "primary_network_interface_id": true,
+                    "private_dns": true,
+                    "private_dns_name_options": true,
+                    "private_ip": true,
+                    "public_dns": true,
+                    "public_ip": true,
+                    "root_block_device": true,
+                    "secondary_network_interface": true,
+                    "secondary_private_ips": true,
+                    "security_groups": true,
+                    "spot_instance_request_id": true,
+                    "subnet_id": true,
+                    "tags": {},
+                    "tags_all": {},
+                    "tenancy": true,
+                    "user_data_base64": true,
+                    "vpc_security_group_ids": true
+                },
+                {
+                    "arn": true,
+                    "associate_public_ip_address": true,
+                    "availability_zone": true,
+                    "capacity_reservation_specification": true,
+                    "cpu_options": true,
+                    "credit_specification": [],
+                    "disable_api_stop": true,
+                    "disable_api_termination": true,
+                    "ebs_block_device": true,
+                    "ebs_optimized": true,
+                    "enable_primary_ipv6": true,
+                    "enclave_options": true,
+                    "ephemeral_block_device": true,
+                    "host_id": true,
+                    "host_resource_group_arn": true,
+                    "iam_instance_profile": true,
+                    "id": true,
+                    "instance_initiated_shutdown_behavior": true,
+                    "instance_lifecycle": true,
+                    "instance_market_options": true,
+                    "instance_state": true,
+                    "ipv6_address_count": true,
+                    "ipv6_addresses": true,
+                    "key_name": true,
+                    "launch_template": [],
+                    "maintenance_options": true,
+                    "metadata_options": true,
+                    "monitoring": true,
+                    "network_interface": true,
+                    "outpost_arn": true,
+                    "password_data": true,
+                    "placement_group": true,
+                    "placement_group_id": true,
+                    "placement_partition_number": true,
+                    "primary_network_interface": true,
+                    "primary_network_interface_id": true,
+                    "private_dns": true,
+                    "private_dns_name_options": true,
+                    "private_ip": true,
+                    "public_dns": true,
+                    "public_ip": true,
+                    "root_block_device": true,
+                    "secondary_network_interface": true,
+                    "secondary_private_ips": true,
+                    "security_groups": true,
+                    "spot_instance_request_id": true,
+                    "subnet_id": true,
+                    "tags": {},
+                    "tags_all": {},
+                    "tenancy": true,
+                    "user_data_base64": true,
+                    "vpc_security_group_ids": true
+                },
+                {
+                    "arn": true,
+                    "associate_public_ip_address": true,
+                    "availability_zone": true,
+                    "capacity_reservation_specification": true,
+                    "cpu_options": true,
+                    "credit_specification": [],
+                    "disable_api_stop": true,
+                    "disable_api_termination": true,
+                    "ebs_block_device": true,
+                    "ebs_optimized": true,
+                    "enable_primary_ipv6": true,
+                    "enclave_options": true,
+                    "ephemeral_block_device": true,
+                    "host_id": true,
+                    "host_resource_group_arn": true,
+                    "iam_instance_profile": true,
+                    "id": true,
+                    "instance_initiated_shutdown_behavior": true,
+                    "instance_lifecycle": true,
+                    "instance_market_options": true,
+                    "instance_state": true,
+                    "ipv6_address_count": true,
+                    "ipv6_addresses": true,
+                    "key_name": true,
+                    "launch_template": [],
+                    "maintenance_options": true,
+                    "metadata_options": true,
+                    "monitoring": true,
+                    "network_interface": true,
+                    "outpost_arn": true,
+                    "password_data": true,
+                    "placement_group": true,
+                    "placement_group_id": true,
+                    "placement_partition_number": true,
+                    "primary_network_interface": true,
+                    "primary_network_interface_id": true,
+                    "private_dns": true,
+                    "private_dns_name_options": true,
+                    "private_ip": true,
+                    "public_dns": true,
+                    "public_ip": true,
+                    "root_block_device": true,
+                    "secondary_network_interface": true,
+                    "secondary_private_ips": true,
+                    "security_groups": true,
+                    "spot_instance_request_id": true,
+                    "subnet_id": true,
+                    "tags": {},
+                    "tags_all": {},
+                    "tenancy": true,
+                    "user_data_base64": true,
+                    "vpc_security_group_ids": true
+                },
+                {
+                    "arn": true,
+                    "associate_public_ip_address": true,
+                    "availability_zone": true,
+                    "capacity_reservation_specification": true,
+                    "cpu_options": true,
+                    "credit_specification": [],
+                    "disable_api_stop": true,
+                    "disable_api_termination": true,
+                    "ebs_block_device": true,
+                    "ebs_optimized": true,
+                    "enable_primary_ipv6": true,
+                    "enclave_options": true,
+                    "ephemeral_block_device": true,
+                    "host_id": true,
+                    "host_resource_group_arn": true,
+                    "iam_instance_profile": true,
+                    "id": true,
+                    "instance_initiated_shutdown_behavior": true,
+                    "instance_lifecycle": true,
+                    "instance_market_options": true,
+                    "instance_state": true,
+                    "ipv6_address_count": true,
+                    "ipv6_addresses": true,
+                    "key_name": true,
+                    "launch_template": [],
+                    "maintenance_options": true,
+                    "metadata_options": true,
+                    "monitoring": true,
+                    "network_interface": true,
+                    "outpost_arn": true,
+                    "password_data": true,
+                    "placement_group": true,
+                    "placement_group_id": true,
+                    "placement_partition_number": true,
+                    "primary_network_interface": true,
+                    "primary_network_interface_id": true,
+                    "private_dns": true,
+                    "private_dns_name_options": true,
+                    "private_ip": true,
+                    "public_dns": true,
+                    "public_ip": true,
+                    "root_block_device": true,
+                    "secondary_network_interface": true,
+                    "secondary_private_ips": true,
+                    "security_groups": true,
+                    "spot_instance_request_id": true,
+                    "subnet_id": true,
+                    "tags": {},
+                    "tags_all": {},
+                    "tenancy": true,
+                    "user_data_base64": true,
+                    "vpc_security_group_ids": true
+                },
+                {
+                    "arn": true,
+                    "associate_public_ip_address": true,
+                    "availability_zone": true,
+                    "capacity_reservation_specification": true,
+                    "cpu_options": true,
+                    "credit_specification": [],
+                    "disable_api_stop": true,
+                    "disable_api_termination": true,
+                    "ebs_block_device": true,
+                    "ebs_optimized": true,
+                    "enable_primary_ipv6": true,
+                    "enclave_options": true,
+                    "ephemeral_block_device": true,
+                    "host_id": true,
+                    "host_resource_group_arn": true,
+                    "iam_instance_profile": true,
+                    "id": true,
+                    "instance_initiated_shutdown_behavior": true,
+                    "instance_lifecycle": true,
+                    "instance_market_options": true,
+                    "instance_state": true,
+                    "ipv6_address_count": true,
+                    "ipv6_addresses": true,
+                    "key_name": true,
+                    "launch_template": [],
+                    "maintenance_options": true,
+                    "metadata_options": true,
+                    "monitoring": true,
+                    "network_interface": true,
+                    "outpost_arn": true,
+                    "password_data": true,
+                    "placement_group": true,
+                    "placement_group_id": true,
+                    "placement_partition_number": true,
+                    "primary_network_interface": true,
+                    "primary_network_interface_id": true,
+                    "private_dns": true,
+                    "private_dns_name_options": true,
+                    "private_ip": true,
+                    "public_dns": true,
+                    "public_ip": true,
+                    "root_block_device": true,
+                    "secondary_network_interface": true,
+                    "secondary_private_ips": true,
+                    "security_groups": true,
+                    "spot_instance_request_id": true,
+                    "subnet_id": true,
+                    "tags": {},
+                    "tags_all": {},
+                    "tenancy": true,
+                    "user_data_base64": true,
+                    "vpc_security_group_ids": true
+                },
+                {
+                    "arn": true,
+                    "associate_public_ip_address": true,
+                    "availability_zone": true,
+                    "capacity_reservation_specification": true,
+                    "cpu_options": true,
+                    "credit_specification": [],
+                    "disable_api_stop": true,
+                    "disable_api_termination": true,
+                    "ebs_block_device": true,
+                    "ebs_optimized": true,
+                    "enable_primary_ipv6": true,
+                    "enclave_options": true,
+                    "ephemeral_block_device": true,
+                    "host_id": true,
+                    "host_resource_group_arn": true,
+                    "iam_instance_profile": true,
+                    "id": true,
+                    "instance_initiated_shutdown_behavior": true,
+                    "instance_lifecycle": true,
+                    "instance_market_options": true,
+                    "instance_state": true,
+                    "ipv6_address_count": true,
+                    "ipv6_addresses": true,
+                    "key_name": true,
+                    "launch_template": [],
+                    "maintenance_options": true,
+                    "metadata_options": true,
+                    "monitoring": true,
+                    "network_interface": true,
+                    "outpost_arn": true,
+                    "password_data": true,
+                    "placement_group": true,
+                    "placement_group_id": true,
+                    "placement_partition_number": true,
+                    "primary_network_interface": true,
+                    "primary_network_interface_id": true,
+                    "private_dns": true,
+                    "private_dns_name_options": true,
+                    "private_ip": true,
+                    "public_dns": true,
+                    "public_ip": true,
+                    "root_block_device": true,
+                    "secondary_network_interface": true,
+                    "secondary_private_ips": true,
+                    "security_groups": true,
+                    "spot_instance_request_id": true,
+                    "subnet_id": true,
+                    "tags": {},
+                    "tags_all": {},
+                    "tenancy": true,
+                    "user_data_base64": true,
+                    "vpc_security_group_ids": true
+                },
+                {
+                    "arn": true,
+                    "associate_public_ip_address": true,
+                    "availability_zone": true,
+                    "capacity_reservation_specification": true,
+                    "cpu_options": true,
+                    "credit_specification": [],
+                    "disable_api_stop": true,
+                    "disable_api_termination": true,
+                    "ebs_block_device": true,
+                    "ebs_optimized": true,
+                    "enable_primary_ipv6": true,
+                    "enclave_options": true,
+                    "ephemeral_block_device": true,
+                    "host_id": true,
+                    "host_resource_group_arn": true,
+                    "iam_instance_profile": true,
+                    "id": true,
+                    "instance_initiated_shutdown_behavior": true,
+                    "instance_lifecycle": true,
+                    "instance_market_options": true,
+                    "instance_state": true,
+                    "ipv6_address_count": true,
+                    "ipv6_addresses": true,
+                    "key_name": true,
+                    "launch_template": [],
+                    "maintenance_options": true,
+                    "metadata_options": true,
+                    "monitoring": true,
+                    "network_interface": true,
+                    "outpost_arn": true,
+                    "password_data": true,
+                    "placement_group": true,
+                    "placement_group_id": true,
+                    "placement_partition_number": true,
+                    "primary_network_interface": true,
+                    "primary_network_interface_id": true,
+                    "private_dns": true,
+                    "private_dns_name_options": true,
+                    "private_ip": true,
+                    "public_dns": true,
+                    "public_ip": true,
+                    "root_block_device": true,
+                    "secondary_network_interface": true,
+                    "secondary_private_ips": true,
+                    "security_groups": true,
+                    "spot_instance_request_id": true,
+                    "subnet_id": true,
+                    "tags": {},
+                    "tags_all": {},
+                    "tenancy": true,
+                    "user_data_base64": true,
+                    "vpc_security_group_ids": true
+                },
+                {
+                    "arn": true,
+                    "associate_public_ip_address": true,
+                    "availability_zone": true,
+                    "capacity_reservation_specification": true,
+                    "cpu_options": true,
+                    "credit_specification": [],
+                    "disable_api_stop": true,
+                    "disable_api_termination": true,
+                    "ebs_block_device": true,
+                    "ebs_optimized": true,
+                    "enable_primary_ipv6": true,
+                    "enclave_options": true,
+                    "ephemeral_block_device": true,
+                    "host_id": true,
+                    "host_resource_group_arn": true,
+                    "iam_instance_profile": true,
+                    "id": true,
+                    "instance_initiated_shutdown_behavior": true,
+                    "instance_lifecycle": true,
+                    "instance_market_options": true,
+                    "instance_state": true,
+                    "ipv6_address_count": true,
+                    "ipv6_addresses": true,
+                    "key_name": true,
+                    "launch_template": [],
+                    "maintenance_options": true,
+                    "metadata_options": true,
+                    "monitoring": true,
+                    "network_interface": true,
+                    "outpost_arn": true,
+                    "password_data": true,
+                    "placement_group": true,
+                    "placement_group_id": true,
+                    "placement_partition_number": true,
+                    "primary_network_interface": true,
+                    "primary_network_interface_id": true,
+                    "private_dns": true,
+                    "private_dns_name_options": true,
+                    "private_ip": true,
+                    "public_dns": true,
+                    "public_ip": true,
+                    "root_block_device": true,
+                    "secondary_network_interface": true,
+                    "secondary_private_ips": true,
+                    "security_groups": true,
+                    "spot_instance_request_id": true,
+                    "subnet_id": true,
+                    "tags": {},
+                    "tags_all": {},
+                    "tenancy": true,
+                    "user_data_base64": true,
+                    "vpc_security_group_ids": true
+                }
+            ],
+            "before_sensitive": false,
+            "after_sensitive": false
+        }
+    },
+    "configuration": {
+        "provider_config": {
+            "aws": {
+                "name": "aws",
+                "full_name": "registry.terraform.io/hashicorp/aws",
+                "version_constraint": "6.32.1"
+            }
+        },
+        "root_module": {
+            "outputs": {
+                "roboshop_instances": {
+                    "expression": {
+                        "references": [
+                            "aws_instance.example"
+                        ]
+                    },
+                    "description": "description"
+                }
+            },
+            "resources": [
+                {
+                    "address": "aws_instance.example",
+                    "mode": "managed",
+                    "type": "aws_instance",
+                    "name": "example",
+                    "provider_config_key": "aws",
+                    "expressions": {
+                        "ami": {
+                            "constant_value": "ami-0220d79f3f480ecf5"
+                        },
+                        "instance_type": {
+                            "constant_value": "t3.micro"
+                        },
+                        "tags": {
+                            "references": [
+                                "var.instances",
+                                "count.index"
+                            ]
+                        },
+                        "vpc_security_group_ids": {
+                            "references": [
+                                "aws_security_group.allow_tls.id",
+                                "aws_security_group.allow_tls"
+                            ]
+                        }
+                    },
+                    "schema_version": 2,
+                    "count_expression": {
+                        "constant_value": 10
+                    }
+                },
+                {
+                    "address": "aws_security_group.allow_tls",
+                    "mode": "managed",
+                    "type": "aws_security_group",
+                    "name": "allow_tls",
+                    "provider_config_key": "aws",
+                    "expressions": {
+                        "description": {
+                            "constant_value": "Allow TLS inbound traffic and all outbound traffic"
+                        },
+                        "egress": {
+                            "constant_value": [
+                                {
+                                    "cidr_blocks": [
+                                        "0.0.0.0/0"
+                                    ],
+                                    "description": null,
+                                    "from_port": 0,
+                                    "ipv6_cidr_blocks": [
+                                        "::/0"
+                                    ],
+                                    "prefix_list_ids": null,
+                                    "protocol": "-1",
+                                    "security_groups": null,
+                                    "self": null,
+                                    "to_port": 0
+                                }
+                            ]
+                        },
+                        "ingress": {
+                            "constant_value": [
+                                {
+                                    "cidr_blocks": [
+                                        "0.0.0.0/0"
+                                    ],
+                                    "description": null,
+                                    "from_port": 0,
+                                    "ipv6_cidr_blocks": [
+                                        "::/0"
+                                    ],
+                                    "prefix_list_ids": null,
+                                    "protocol": "-1",
+                                    "security_groups": null,
+                                    "self": null,
+                                    "to_port": 0
+                                }
+                            ]
+                        },
+                        "name": {
+                            "constant_value": "allow-all-roboshop"
+                        },
+                        "tags": {
+                            "constant_value": {
+                                "Name": "allow-all-terraform"
+                            }
+                        }
+                    },
+                    "schema_version": 1
+                }
+            ],
+            "variables": {
+                "instances": {
+                    "default": [
+                        "mongodb",
+                        "redis",
+                        "mysql",
+                        "rabbitmq",
+                        "catalogue",
+                        "user",
+                        "cart",
+                        "shipping",
+                        "payment",
+                        "frontend"
+                    ]
+                }
+            }
+        }
+    },
+    "relevant_attributes": [
+        {
+            "resource": "aws_instance.example",
+            "attribute": []
+        },
+        {
+            "resource": "aws_security_group.allow_tls",
+            "attribute": [
+                "id"
+            ]
+        }
+    ],
+    "timestamp": "2026-02-21T15:50:33Z",
+    "applyable": true,
+    "complete": true,
+    "errored": false
+}
