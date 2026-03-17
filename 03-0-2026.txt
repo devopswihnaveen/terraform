@@ -6055,9 +6055,3 @@ module.vpc.aws_vpc.main: Destruction complete after 1s
 Releasing state lock. This may take a few moments...
 
 Destroy complete! Resources: 28 destroyed.
-
-Naveen@DESKTOP-Q4AG45S MINGW64 ~/Desktop/Tasks/devops-portfolio/Terraform/roboshop-infra-dev/00-vpc (main)
-$ ^C
-
-Naveen@DESKTOP-Q4AG45S MINGW64 ~/Desktop/Tasks/devops-portfolio/Terraform/roboshop-infra-dev/00-vpc (main)
-$
